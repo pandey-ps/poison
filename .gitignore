@@ -1,0 +1,7 @@
+models/
+bin/
+*.gguf
+*.backup.json
+*.snapshot.json
+.venv/
+__pycache__/
