@@ -28,7 +28,7 @@ def main(argv=None) -> None:
     p = argparse.ArgumentParser(prog="poison", description="live GGUF logit-row biasing")
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    q = sub.add_parser("poison", help="bias target token rows, then verify")
+    q = sub.add_parser("poison", help="bias target token rows")
     base(q)
     q.add_argument("--target", default="pwn")
     q.add_argument("--token-ids", help="skip llama-tokenize, e.g. '23250'")
